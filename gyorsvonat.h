@@ -1,10 +1,12 @@
 #include<string>
 
-class Gyorsvonat : Vonat
+class Gyorsvonat : public Vonat
 {
 private:
 	std::string neve;
 public:
-	Gyorsvonat(int ev, std::string nev):Vonat(ev),neve(nev){};
+	Gyorsvonat(int ev, std::string nev);
+	virtual void print();
+	virtual ~Gyorsvonat();
 };
 
