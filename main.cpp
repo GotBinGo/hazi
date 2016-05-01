@@ -10,6 +10,14 @@ int main()
 	Szemelyvonat *sz = new Szemelyvonat(1970,10);
 	v=sz;
 	v->print();
+
+	Allomas a("Abda"), b("Baja");
+	Jarat j(a,b);
+
+	Menetrend m;
+
+	m.add(j);
+
 	std::cout << "end of program" << std::endl;
 }
 
