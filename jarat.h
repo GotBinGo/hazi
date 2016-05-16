@@ -10,6 +10,7 @@ private:
 	Vonat *vonat;
 public:
 	Jarat(Allomas ind, Allomas erk);
-
+	Allomas getIndulas() const;
+	Allomas getErkezes() const;
 };
 

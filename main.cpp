@@ -28,6 +28,10 @@ int main()
 
 	m.add(j);
 
-	std::cout << "end of program" << std::endl;
+	std::list<Jarat> ker = m.Keres(a, b);
+	for(std::list<Jarat>::iterator it = ker.begin(); it != ker.end(); it++)
+	{
+		std::cout << "valami";
+	}
 }
 
