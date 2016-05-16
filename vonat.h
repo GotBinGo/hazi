@@ -11,8 +11,9 @@ private:
 	const vonat_tipus tipus;
 public:
 	Vonat(int ev, vonat_tipus vt);
+	bool isIC() const;
 	virtual void print() = 0;
-	void print_ev();
+	void print_ev() const;
 	virtual ~Vonat() = 0;
 };
 
