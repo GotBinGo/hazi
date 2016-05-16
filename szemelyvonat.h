@@ -7,6 +7,7 @@ private:
 public:
 	Szemelyvonat(int ev, int kes);
 	virtual void print();
+	int getKeses();
 	virtual ~Szemelyvonat();
 };
 

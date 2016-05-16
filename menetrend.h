@@ -1,6 +1,7 @@
 #include"jarat.h"
-#include"gyorsvonat.h"
 #include"szemelyvonat.h"
+#include"gyorsvonat.h"
+#include"ic.h"
 #include<list>
 
 class Menetrend

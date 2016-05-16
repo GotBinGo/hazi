@@ -7,6 +7,7 @@ private:
 public:
 	Gyorsvonat(int ev, std::string nev);
 	virtual void print();
+	std::string getNeve();
 	virtual ~Gyorsvonat();
 };
 

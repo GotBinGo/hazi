@@ -2,9 +2,13 @@
 #include"szemelyvonat.h"
 #include<iostream>
 
-Szemelyvonat::Szemelyvonat(int ev, int kes):Vonat(ev),keses(kes){};
+Szemelyvonat::Szemelyvonat(int ev, int kes):Vonat(ev, szemelyvonat),keses(kes){};
 void Szemelyvonat::print()
 {
-	std::cout<<keses<<std::endl;
+	std::cout << "Szemelyvonat";
+}
+int Szemelyvonat::getKeses()
+{
+	return keses;	
 }
 Szemelyvonat::~Szemelyvonat(){};
