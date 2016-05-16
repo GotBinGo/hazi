@@ -1,6 +1,6 @@
 #include<iostream>
 #include"menetrend.h"
-
+#include"memtrace.h"
 int main()
 {
 	Vonat *v;

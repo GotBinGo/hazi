@@ -1,3 +1,5 @@
+#ifndef SZEMELYVONAT_H
+#define SZEMELYVONAT_H
 #include<string>
 
 class Szemelyvonat : public Vonat
@@ -10,4 +12,6 @@ public:
 	int getKeses();
 	virtual ~Szemelyvonat();
 };
+
+#endif //SZEMELYVONAT_H
 

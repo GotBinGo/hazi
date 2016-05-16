@@ -1,3 +1,6 @@
+#ifndef GYORSVONAT_H
+#define GYORSVONAT_H
+
 #include<string>
 
 class Gyorsvonat : public Vonat
@@ -10,4 +13,5 @@ public:
 	std::string getNeve();
 	virtual ~Gyorsvonat();
 };
+#endif //GYORSVONAT_H
 

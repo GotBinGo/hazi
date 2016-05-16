@@ -1,7 +1,7 @@
 #include"allomas.h"
 #include<string>
 #include<iostream>
-
+#include"memtrace.h"
 Allomas::Allomas(std::string nev):neve(nev){};
 
 void Allomas::print() const

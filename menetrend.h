@@ -1,3 +1,6 @@
+#ifndef MENETREND_H
+#define MENETREND_H
+
 #include"jarat.h"
 #include"szemelyvonat.h"
 #include"gyorsvonat.h"
@@ -15,4 +18,6 @@ public:
 	std::list<Jarat> Keres(Allomas ind, Allomas erk);
 	std::list<Jarat> Keres(time_t tim = time_t(0), time_t tim2 = std::numeric_limits<time_t>::max());
 };
+
+#endif //MENETREND_H
 

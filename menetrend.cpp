@@ -2,6 +2,7 @@
 #include<iostream>
 #include<list>
 #include<ctime>
+#include"memtrace.h"
 
 Menetrend::Menetrend(){}
 

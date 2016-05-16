@@ -1,6 +1,7 @@
 #include"jarat.h"
 #include<iostream>
 #include<ctime>
+#include"memtrace.h"
 
 Jarat::Jarat(Allomas ind, Allomas erk, int km, Vonat * von, time_t ind_t, time_t erk_t)
 :km(km), vonat(von), indulas(ind),erkezes(erk),indulas_t(ind_t),erkezes_t(erk_t)

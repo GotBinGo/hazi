@@ -1,3 +1,6 @@
+#ifndef JARAT_H
+#define JARAT_H
+
 #include"vonat.h"
 #include"allomas.h"
 #include<ctime>
@@ -19,4 +22,6 @@ public:
 	time_t getIndulasTime() const;
 	time_t getErkezesTime() const;
 };
+
+#endif //JARAT_H
 

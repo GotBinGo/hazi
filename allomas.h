@@ -1,3 +1,6 @@
+#ifndef ALLOMAS_H
+#define ALLOMAS_H
+
 #include<string>
 
 class Allomas 
@@ -10,4 +13,5 @@ public:
 	bool operator==(const Allomas& b) const;
 	void print() const;
 };
+#endif //ALLOMAS_H
 

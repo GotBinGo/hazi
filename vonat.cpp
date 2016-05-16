@@ -1,5 +1,6 @@
 #include"vonat.h"
 #include<iostream>
+#include"memtrace.h"
 
 Vonat::Vonat(int ev, vonat_tipus vt = ic):gyartas_eve(ev),tipus(vt){};
 

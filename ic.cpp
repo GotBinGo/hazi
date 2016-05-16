@@ -1,6 +1,8 @@
 #include"vonat.h"
 #include"ic.h"
 #include<iostream>
+#include"memtrace.h"
+
 
 IC::IC(int ev, std::string nev):Vonat(ev, ic), neve(nev)
 {
