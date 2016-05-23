@@ -1,7 +1,28 @@
-main: main.cpp vonat.cpp ic.cpp gyorsvonat.cpp szemelyvonat.cpp allomas.cpp jarat.cpp menetrend.cpp menetrend.h vonat.h gyorsvonat.h
-	g++ -o main main.cpp vonat.cpp ic.cpp gyorsvonat.cpp szemelyvonat.cpp allomas.cpp jarat.cpp menetrend.cpp
-clean: main
-	rm main
-run: main
-	./main
+CC=g++
+#CFLAGS=-c -Wall
+CFLAGS=-c -Iinc
+LDFLAGS=
+SRC=./src
+FILES=$(notdir $(wildcard $(SRC)/*.cpp))
+SOURCES=$(addprefix ./src/, $(FILES))
+OBJECTS=$(addprefix ./obj/, $(FILES:.cpp=.o))
+LIB=bin/menetrend.a
+TEST=bin/test
+MAIN=bin/main
+
+all: clean $(SOURCES) $(LIB) $(TEST)
+	$(CC) -o $(MAIN) $(MAIN).cpp $(LIB) -Iinc -Isrc
+
+$(LIB): $(OBJECTS) 
+	ar rcs $(LIB) $(OBJECTS)
+
+$(TEST): $(LIB)
+	$(CC) -o $(TEST) $(TEST).cpp $(LIB) -Iinc -Isrc
+
+
+$(OBJECTS): obj/%.o : src/%.cpp
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -f obj/*.o bin/*.a $(TEST) $(MAIN) 
 

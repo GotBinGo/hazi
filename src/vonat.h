@@ -4,6 +4,7 @@
 #include<string>
 
 enum vonat_tipus {szemelyvonat, gyorsvonat, ic};
+
 class Vonat
 {
 private:
