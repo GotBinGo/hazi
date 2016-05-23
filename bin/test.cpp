@@ -284,7 +284,7 @@ int main()
 	
 
 		std::list<Jarat> ker2 = m.Keres(c, d);
-		std::cout << "Cegled-Dunaujvaros" << std::endl;
+		std::cout << "Cegled-Dorog" << std::endl;
 		EXPECT_TRUE(ker2.size() == 1);
 		for(std::list<Jarat>::iterator it = ker2.begin(); it != ker2.end(); it++)
 		{
