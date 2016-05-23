@@ -1,6 +1,6 @@
 CC=g++
 #CFLAGS=-c -Wall
-CFLAGS=-c -Iinc
+CFLAGS=-c -Iinc -Wall
 LDFLAGS=
 SRC=./src
 FILES=$(notdir $(wildcard $(SRC)/*.cpp))

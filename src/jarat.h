@@ -8,10 +8,10 @@
 class Jarat
 {
 private:
-	std::time_t indulas_t, erkezes_t;
-	Allomas indulas, erkezes;
-	Vonat *vonat;
 	int km;
+	Vonat *vonat;
+	Allomas indulas, erkezes;
+	std::time_t indulas_t, erkezes_t;
 public:
 	Jarat(Allomas ind, Allomas erk,int km, Vonat *von, std::time_t ind_t = time_t(0), std::time_t erk_t = time_t(0));
 	void print() const;
